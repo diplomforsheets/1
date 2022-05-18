@@ -1,0 +1,11 @@
+Sat May  9 13:23:04 PDT 2020
+192.168.152.145
+Linux client 5.3.0-51-generic #44~18.04.2-Ubuntu SMP Thu Apr 23 14:27:18 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Model name:          Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz
+00:0f.0 VGA compatible controller: VMware SVGA II Adapter
+MemTotal:         975312 kB
+       description: DIMM DRAM EDO
+       product: VMware Virtual S
+	Vendor: Phoenix Technologies LTD 	Version: 6.00 
+	Manufacturer: Intel Corporation 	Product Name: 440BX Desktop Reference Platform 	Version: None 	Serial Number: None 
+                product: 82545EM Gigabit Ethernet Controller (Copper)

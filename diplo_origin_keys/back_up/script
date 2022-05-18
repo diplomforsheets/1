@@ -1,0 +1,23 @@
+#!/bin/bash
+var=0
+while read LINE
+do
+let var=$var+1
+	echo "$LINE"          
+	date > "temp${var}"
+	echo "$LINE" >> "temp${var}" 	#IP_addres
+	ansible -i hosts -m shell -a 'uname -a' "$LINE" | sed '/SUCCESS/d' >> "temp${var}" 	#OS_bild_kernel
+	ansible -i hosts -m shell -a 'lscpu | grep "Model name"'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}"	#PROCESOR
+	ansible -i hosts -m shell -a 'lspci | grep -E "VGA|3D"'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}"	#grafic_card
+	#ansible -i hosts -m shell -a 'sudo lshw -short -C disk | grep sda'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}"
+	ansible -i hosts -m shell -a 'cat /proc/meminfo |grep MemTotal'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}" #operativ_memory
+	ansible -i hosts -m shell -a 'lshw -C memory |grep bank:0 -A 25 |grep description |grep -v empty'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}" #operativ_memory_description
+	ansible -i hosts -m shell -a 'lshw -class disk | grep product | head -n1'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}" #hard_drive
+	ansible -i hosts -m shell -a ' dmidecode |grep "BIOS Information" -A 10 | grep Vendor -A 1'  "$LINE" | sed '/SUCCESS/d' |awk '{print }' ORS=' ' | awk '{print}' >> "temp${var}" #BIOS	
+	ansible -i hosts -m shell -a 'dmidecode |grep "Base Board" -A 10 |grep Manufacturer -A 3' "$LINE" | sed '/SUCCESS/d'  |awk '{print }' ORS=' ' | awk '{print}' >> "temp${var}" #Mother_board
+	ansible -i hosts -m shell -a ' lshw | grep network -A 3 | grep product'  "$LINE" | sed '/SUCCESS/d' >> "temp${var}" #network_card
+	ansible -i hosts -m shell -a 'lshw'  "$LINE" | sed '/SUCCESS/d' | awk -v A=-1 '/DISABLED/ { A = 18 } A-- >= 0 {next } 1' | awk -v A=-1 '/UNCLAIMED/ { A = 4 } A-- >= 0 {next } 1' > "all${var}.txt" 
+
+done < hosts
+
+
