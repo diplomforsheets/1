@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "diplosheets",
+  "private_key_id": "91642d60da4d67111dc3b792b68aed9558770f22",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCq+yM9Wsmbcqj0\nQnkWF6pQHm5bA+klJlNlx0vdEKdMkcJQct8gDhxRcpiXdS2B7ONwqogGK0PcEoCU\nU4VqSjnybISIqA9a0NgNktx7JHCoH2tKX96vNIqD2+Wfs9uZj58r3plTt7FpQnZ2\nb3Npl1iT1nZbXYLHW9ajV7Xbe8JrnwAdNXEnwRJ8IjfOKOEjl9qb0XsFL6t2sueK\nRvcjmpskQl/2B/PQkTyCTia2dpKrMWkjjds/sfGxWQ7/4gpn1Sck3EktHnBqo4lz\nJIl3tGLaWV2qsw28WaAV4eNbqmJCt2EnpI9pYBkA3Xz/j6aHA/DVAF28YosaIQIZ\nnVd27k9ZAgMBAAECggEAU/Mu4EcdSffIQPYKYfCIrQHkCUgoRxdER2rNMuOkYRII\nKFvedey3tr3fci4UhAB9w6nXU8AWd42WGD3R+dgsD318rWRm9Z4pFrEPFF9V+RZE\nJaZgvgG8KPXlDr7Oid1ct7t56QL+VsJNS+V481VeJmhcgIuvVJchEd5U6kkfspr1\n9PUYzo11Wqg8zw1+NYFGL0iZ+q83VK+kQxwO1W9dpCgqMNVovBjSSwoEHvFOPcyz\n36hz3ooroNfKFxtWVu75mjc6ApHUkyFjQgfElQ7Iz4WmmXMdXcKoVxISL89UEUZ5\njjGFkSisP2V+j89WPl3vn5wPt7C8aIqX0gkXpoA3KQKBgQDtAZ1WfmvK4qoR8cra\nZZPe8zLCDjiSPwDAFcUv9hc/EkGHMcQq5KS+dejk7zjIMvvx6/UspxitxUUemNwa\nvGo5tKWPaqK1M30DmwA4VImWx5heYl2rxFiVWFu1oe0xcl4QU67wKsoXMEom6hVr\ni7SfKLZeIFXNkBAB8YMDnMD7RwKBgQC4rvVAfGGMVhJNfG87h1T1hz9StQzhl33E\nFPS1Cu+UwDhDgkhzSjPyog57e0zlu6qDYvfyqFW4Pje3crTvabFY9W8hTCKJzXd2\nJPA/6iEn5WL1lW1OnQmybweLgkJvOtcW56Im+uFyvPFbjAz7TmXx/CKrra0UZ+mR\nrZvhpI5wXwKBgB+DWXJIuPhvDwH3zmsfmnvIhnU7AtafPfBMdL2d0RV3zfK18Ulq\nwWT5tI/MJxangMx3/U+EoElqs3gQByQe7Vji5iidmyjQwcya7XqP8wNzYpUaKy5N\nmyGwb/FEqI8sj8lH9zjD178hkpp+AX8dQlTvSuBVGFOO1jIL9MmkLBy9AoGBAJDJ\nQSacHJG7zL+IpV+i+l0++crqe73EWWnHEA17FFam17U9R3VzIATBPd9ay+9zT/uP\nNFm91O4LgPzF5cmoL8xRJh2RpaYpOdWaoetJr1KqyAlGa5ptDPQhjWW26kRveb7Q\nO9SZbPPZ4tJlmqvOS6gJhljXYNCVoox98a5VpwG7AoGAD6auzCnq16zjMsmUwKHP\nN/NWabS4gx1UuIoAwil4xyAihdOlTblW1VXw23/evVKCDg1ecOdi+wsWHvvp9/ax\n/yU5QagMrGfq9Uk3L6KpC0E+TjRbDwJAL/LZ4l55fd3Z60jEeVVy44lsOiUTfeU+\ndBmicXtC5CEzcx3xl3Iy+mU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "diplo-4@diplosheets.iam.gserviceaccount.com",
+  "client_id": "109061305459265486315",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/diplo-4%40diplosheets.iam.gserviceaccount.com"
+}
