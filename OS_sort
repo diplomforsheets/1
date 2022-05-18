@@ -1,0 +1,31 @@
+#!/bin/bash
+var=0
+rm -rf hosts.*
+echo "[win]"> hosts.win
+echo "[lin]" >hosts.lin
+if [ -s hosts ]; then
+        while read LINE
+        do
+                if nmap -O $LINE |grep Windows; then
+                        echo "$LINE" >> hosts.win
+                        else
+                        echo "$LINE" >> hosts.lin
+                fi
+        done < hosts
+else
+        for ip_end in {1..254}; do
+                if nmap -O "192.168.0.$ip_end" |grep Windows; then
+                        echo "$LINE" >> hosts.win
+                        else
+                        echo "$LINE" >> hosts.lin
+        done
+fi
+echo "[win:vars]
+ansible_user='y'
+ansible_password=y
+ansible_connection=winrm
+ansible_port=5986
+ansible_port=5986
+ansible_winrm_server_cert_validation=ignore" >> hosts.win
+echo "[lin:vars]
+ansible_user='root'" >> hosts.lin
